@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    font-size: 2rem;
+    color: #333;
+}
+
+.parking-map {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-map {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slot {
+    position: absolute;
+    width: 100px;
+    height: 46px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.mid-slot {
+    width: 44px;
+    height: 94px;
+}
+
+.slot1 {
+    top: 6.8%;
+    left: 18%;
+}
+
+.slot2 {
+    top: 17.8%;
+    left: 18%;
+}
+
+.slot3 {
+    top: 29.2%;
+    left: 18%;
+}
+
+.slot4 {
+    top: 40.5%;
+    left: 18%;
+}
+
+.slot5 {
+    top: 51.2%;
+    left: 18%;
+}
+
+.slot6 {
+    top: 62.1%;
+    left: 18%;
+}
+
+.slot7 {
+    top: 30%;
+    left: 42.1%;
+}
+
+.slot8 {
+    top: 30%;
+    left: 48.3%;
+}
+
+.slot9 {
+    top: 30%;
+    left: 54.8%;
+}
+
+.slot10 {
+    top: 30%;
+    left: 61.2%;
+}
+
+.slot11 {
+    top: 30%;
+    left: 67.5%;
+}
+
+.slot12 {
+    top: 6.8%;
+    left: 85.9%;
+}
+
+.slot13 {
+    top: 17.8%;
+    left: 85.9%;
+}
+
+.slot14 {
+    top: 51.7%;
+    left: 85.9%;
+}
+
+.slot15 {
+    top: 62.5%;
+    left: 85.9%;
+}
+
+@media (max-width: 430px) {
+    .parking-map {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .background-map {
+        margin-top: -70px;
+        margin-left: -1px;
+        transform: rotate(90deg);
+        width: 175vw;
+        height: 100vh;
+        object-fit: contain;
+        display: block;
+    }
+
+    .text {
+        transform: rotate(90deg);
+    }
+
+    .slot {
+        width: 34px;
+        height: 75px;
+    }
+
+    .mid-slot {
+        width: 71px;
+        height: 34px;
+    }
+
+    .slot1 {
+        top: 15.3%;
+        left: 83.8%;
+    }
+
+    .slot2 {
+        top: 15.3%;
+        left: 73%;
+    }
+
+    .slot3 {
+        top: 15.3%;
+        left: 62%;
+    }
+
+    .slot4 {
+        top: 15.3%;
+        left: 50.6%;
+    }
+
+    .slot5 {
+        top: 15.3%;
+        left: 40%;
+    }
+
+    .slot6 {
+        top: 15.3%;
+        left: 29.5%;
+    }
+
+    .slot7 {
+        top: 35.1%;
+        left: 52%;
+    }
+
+    .slot8 {
+        top: 40.2%;
+        left: 52%;
+    }
+
+    .slot9 {
+        top: 45.5%;
+        left: 52%;
+    }
+
+    .slot10 {
+        top: 50.7%;
+        left: 52%;
+    }
+
+    .slot11 {
+        top: 56%;
+        left: 52%;
+    }
+
+    .slot12 {
+        top: 71%;
+        left: 83.8%;
+    }
+
+    .slot13 {
+        top: 71%;
+        left: 73%;
+    }
+
+    .slot14 {
+        top: 71%;
+        left: 39.6%;
+    }
+
+    .slot15 {
+        top: 71%;
+        left: 29.1%;
+    }
+}
