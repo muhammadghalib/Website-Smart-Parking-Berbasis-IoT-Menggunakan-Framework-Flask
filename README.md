@@ -159,11 +159,15 @@ Website menampilkan antarmuka berbeda tergantung status ESP32 Server dan Client,
 
 1. Website saat ESP32 Server mati
    ![](./docs/ESP32_Server_mati.png)
-2. Website saat ESP32 Server hidup
+   Ketika ESP32 server dalam keadaan mati, semua nomor slot parkir pada website akan ditampilkan dengan tanda “-”.
+3. Website saat ESP32 Server aktif
    ![](./docs/ESP32_Server_hidup.png)
-3. Website saat semua ESP32 Client hidup
+   Ketika ESP32 server aktif, semua nomor slot parkir pada website akan ditampilkan dengan status “NA”.
+5. Website saat semua ESP32 Client hidup
    ![](./docs/Semua_ESP32_Client_Hidup.png)
-4. Website saat beberapa ESP32 Client mati
+   Jika seluruh ESP32 client aktif, maka website akan menampilkan setiap slot parkir dengan warna hijau atau abu-abu sesuai dengan pembacaan sensor, lengkap dengan nomor slot parkirnya.
+7. Website saat beberapa ESP32 Client mati
    ![](./docs/Beberapa_ESP32_Client_Mati.png)
+   Jika sebagian ESP32 client tidak aktif, maka slot yang terkait pada website akan ditampilkan dengan status “NA”.
 
 ## 💡 STAY CURIOUS
