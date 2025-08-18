@@ -21,7 +21,7 @@ Data tersebut diteruskan ke aplikasi web berbasis Flask yang menampilkan dashboa
 - Python Flask
 
 ## 📘 Skematik Rangkaian
-![](./docs/Schematic.jpg)
+![](./docs/Schematic.png)
 
 ## ⚙️ Konfigurasi Pin
 |   HC-SR04  | ESP32 Client |
@@ -83,8 +83,8 @@ git clone https://github.com/muhammadghalib/Website-Smart-Parking-Berbasis-IoT-M
     python app.py
     ```
 8. Tampilan terminal Flask
-    
-    Flask berhasil dijalankan dengan alamat `http://192.168.0.6:5000` dan siap untuk menerima data dari ESP32 Server.
+   ![](./docs/Serial_Monitor_Flask.png)
+   Flask berhasil dijalankan dengan alamat `http://192.168.0.6:5000` dan siap untuk menerima data dari ESP32 Server.
 
 ### 3. Menjalankan ESP32 Server
 
@@ -122,7 +122,7 @@ git clone https://github.com/muhammadghalib/Website-Smart-Parking-Berbasis-IoT-M
       ```
 8. Setelah semua konfigurasi selesai, sambungkan ESP32 ke komputer dan unggah sketch ke perangkat.
 9. Tampilan serial monitor
-
+    ![](./docs/Serial_Monitor_ESP32_Server.png)
     ESP32 Server sudah siap menerima data dari ESP32 Client dan menggunakan Wi-Fi channel `8`. Simpan angka tersebut dan akan digunakan pada tahap selanjutnya.
 
 
@@ -149,8 +149,8 @@ git clone https://github.com/muhammadghalib/Website-Smart-Parking-Berbasis-IoT-M
       ```
 4. Setelah semua konfigurasi selesai, sambungkan ESP32 ke komputer dan unggah sketch ke perangkat.
 5. Tampilan serial monitor
-    
-    ESP32 Client berhasil mengirimkan informasi ketersediaan slot parkir ke ESP32 Server.
+   ![](./docs/Serial_Monitor_ESP32_Client.png)
+   ESP32 Client berhasil mengirimkan informasi ketersediaan slot parkir ke ESP32 Server.
 
 
 ### 5. Tampilan Website
@@ -158,8 +158,8 @@ git clone https://github.com/muhammadghalib/Website-Smart-Parking-Berbasis-IoT-M
 Website menampilkan antarmuka berbeda tergantung status ESP32 Server dan Client, dengan rincian sebagai berikut:
 
 1. Website saat ESP32 Server mati
-2. Website saat ESP32 Server hidup
-3. Website saat semua ESP32 Client hidup
-4. Website saat beberapa ESP32 Client mati
+3. Website saat ESP32 Server hidup
+4. Website saat semua ESP32 Client hidup
+5. Website saat beberapa ESP32 Client mati
 
 ## 💡 STAY CURIOUS
