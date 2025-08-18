@@ -158,8 +158,12 @@ git clone https://github.com/muhammadghalib/Website-Smart-Parking-Berbasis-IoT-M
 Website menampilkan antarmuka berbeda tergantung status ESP32 Server dan Client, dengan rincian sebagai berikut:
 
 1. Website saat ESP32 Server mati
-3. Website saat ESP32 Server hidup
-4. Website saat semua ESP32 Client hidup
-5. Website saat beberapa ESP32 Client mati
+   ![](./docs/ESP32_Server_mati.png)
+2. Website saat ESP32 Server hidup
+   ![](./docs/ESP32_Server_hidup.png)
+3. Website saat semua ESP32 Client hidup
+   ![](./docs/Semua_ESP32_Client_Hidup.png)
+4. Website saat beberapa ESP32 Client mati
+   ![](./docs/Beberapa_ESP32_Client_Mati.png)
 
 ## 💡 STAY CURIOUS
