@@ -170,4 +170,13 @@ Website menampilkan antarmuka berbeda tergantung status ESP32 Server dan Client,
    ![](./docs/Beberapa_ESP32_Client_Mati.png)
    Jika sebagian ESP32 client tidak aktif, maka slot yang terkait pada website akan ditampilkan dengan status “NA”.
 
+## 📝 Catatan Penting
+1. Pada ESP32 yang berperan sebagai server, konfigurasi WiFi.mode() harus menggunakan mode Access Point dan Station sekaligus (WIFI_AP_STA). Meskipun tidak ada perangkat yang terkoneksi melalui Wi-Fi, pengaturan ini tetap dibutuhkan agar ESP32 dapat menjalankan fungsi Wi-Fi dan ESP-NOW secara bersamaan. Implementasi pengaturan ini ditempatkan pada baris ke-27 sebagai berikut:
+   ```c++
+   WiFi.mode(WIFI_AP_STA);
+   ```
+   Referensi :
+   1. [ESP-NOW Web Server Sensor Dashboard (ESP-NOW + Wi-Fi)](https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/)
+   2. [esp-now-network-and-wifi-gateway](https://github.com/m1cr0lab-esp32/esp-now-network-and-wifi-gateway/)
+
 ## 💡 STAY CURIOUS
